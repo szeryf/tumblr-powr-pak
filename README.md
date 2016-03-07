@@ -1,5 +1,5 @@
 # tumblr-powr-pak
-A simple Chrome extension to fix some of the most annoying Tumblr quirks
+A simple Chrome extension to fix some of the most annoying Tumblr quirks: redirect to archive, hi-res images, bring back the tracked tags
 
 ## What does it do?
 
