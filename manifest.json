@@ -1,7 +1,7 @@
 {
-  "name": "tumblr Redirect to archive",
-  "version": "0.7",
-  "description": "Checks URL and redirects as required.",
+  "name": "tumblr-power-pak",
+  "version": "1.0.0",
+  "description": "Fix some of the most annoying Tumblr quirks.",
   "background": {
     "page":"bg.html"
   },
