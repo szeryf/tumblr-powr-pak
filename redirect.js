@@ -1,3 +1,4 @@
+// Redirect to archive: comment out or remove the following block to disable (lines 2-13)
 chrome.webNavigation.onBeforeNavigate.addListener(
   function (details) {
     var newurl = details.url;
@@ -11,6 +12,8 @@ chrome.webNavigation.onBeforeNavigate.addListener(
   {url: [{hostSuffix: '.tumblr.com', pathEquals: '/'}]}
 );
 
+
+// Replace images with 1280px version: comment out or remove the following block to disable (lines 17-28)
 chrome.webNavigation.onBeforeNavigate.addListener(
   function (details) {
     var oldurl, newurl;
@@ -24,6 +27,8 @@ chrome.webNavigation.onBeforeNavigate.addListener(
   {url: [{hostSuffix: 'media.tumblr.com'}]}
 );
 
+
+// Bring back the tracked tags: comment out or remove the following block to disable (lines 32-45)
 chrome.webNavigation.onBeforeNavigate.addListener(
   function (details) {
     var oldurl = details.url;
