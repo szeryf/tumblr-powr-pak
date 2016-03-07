@@ -61,4 +61,4 @@ Feel free to tweak the code, send pull request or raise issues. If you would lik
 
 ### What if I want to use the extension, but not one of the functions?
 
-Locate the functionality in the code and comment it out, then reload extension in Chrome.
+Locate the functionality in the code (I added some helpful comments to mark these places, but you should be familiar with the JS syntax at least) and comment it out, then reload extension in Chrome.
