@@ -1,0 +1,20 @@
+{
+  "name": "tumblr Redirect to archive",
+  "version": "0.7",
+  "description": "Checks URL and redirects as required.",
+  "background": {
+    "page":"bg.html"
+  },
+  "manifest_version": 2,
+  "permissions": ["tabs", "webNavigation"],
+  "content_scripts": [
+    {
+      "matches": ["http://*.tumblr.com/archive*"],
+      "js": ["archive.js"]
+    },
+    {
+      "matches": ["*://*/image/*"],
+      "js": ["image.js"]
+    }
+  ]
+}
