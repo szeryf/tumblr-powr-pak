@@ -23,7 +23,7 @@ This just makes it easier to save the image (I follow some photography blogs and
 
 ### Always show the highest resolution picture (1280)
 
-Tumblr has several standard picture resolutions, of which the 1280px-wide is highest available for still pictures (JPG & PNG). However, some templates only show the 500px version and even when you click on the picture, you still get the 500px. [tumblr-powr-pak](https://github.com/szeryf/tumblr-powr-pak) takes care of this, always redirecting to 1280px version (only works when you open the picture directly or have it opened by the function above, i.e. when the URL in browser's address bar is the picture URL).
+Tumblr has several standard picture resolutions, of which the 1280px-wide is highest available for still pictures (JPG & PNG). However, Tumblr dashboard and some templates only show the 500px version and even when you click on the picture, you still get the 500px. [tumblr-powr-pak](https://github.com/szeryf/tumblr-powr-pak) takes care of this, always redirecting to 1280px version (only works when you open the picture directly or have it opened by the function above, i.e. when the URL in browser's address bar is the picture URL).
 
 ### Bring back the tracked tags
 
