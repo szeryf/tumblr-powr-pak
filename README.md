@@ -40,11 +40,11 @@ Caveat: doesn't work with custom domains (i.e. when blog doesn't have `tumblr.co
 
 ## How to install
 
-1. Clone the repo: `git clone https://github.com/szeryf/tumblr-powr-pak.git`
+1. Clone the repo: `git clone https://github.com/szeryf/tumblr-powr-pak.git` (alternatively, you can click "Download ZIP" above then unzip the downloaded file wherever is convenient for you)
 2. Open extensions tab in Chrome (Window -> Extensions)
 3. Make sure `Developer mode` is checked
 4. Click `Load unpacked extension`
-5. Navigate to the directory where you cloned the extension and Select it
+5. Navigate to the directory where you cloned (or unzipped) the extension and Select it
 6. That's it. Enjoy! (You might want to refresh any open Tumblr windows, though.)
 
 ### What? Y U NO publish to Chrome store?
