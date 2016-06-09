@@ -17,6 +17,12 @@
     {
       "matches": ["*://*/image/*"],
       "js": ["image.js"]
+    },
+    // Allow the links to tumblrs to be opened in new window/tab instead of the side-thingy:
+    // comment out or remove the following block to disable (lines 23-26 plus the comma above)
+    {
+      "matches": ["https://www.tumblr.com/dashboard*"],
+      "js": ["peepr-removr.js"]
     }
   ]
 }
