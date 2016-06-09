@@ -1,7 +1,15 @@
 # tumblr-powr-pak
-A simple Chrome extension to fix some of the most annoying Tumblr quirks: redirect to archive, hi-res images, bring back the tracked tags
+A simple Chrome extension to fix some of the most annoying Tumblr quirks. Allows opening blogs and images in new tab, automatically redirects to archive, shows hi-res images, brings back the tracked tags!
 
 ## What does it do?
+
+### Open Tumblr blog in new tab
+
+Until recently, ctrl/cmd-clicking a Tumblr blog link on Tumblr dashboard worked as you would expect: opened the blog as a new tab or window. Right now, Tumblr broke it and they show their crappy side preview thingy. If you don't like crappy side preview thingies, my extension fixes it for you.
+
+### Open images in new tab
+
+Similar thing as above: used to work, now it doesn't. Unless you have the extension of course, then you can ctrl/cmd-click images to your heart content :) Note: this doesn't apply to images pointing to somewhere outside Tumblr (like Instagram, Flickr etc.) Please respect the copyrights if use this.
 
 ### Redirect to archive
 
@@ -35,17 +43,24 @@ The search functionality is still available since search bar links to `https://w
 
 As mentioned above, I like to see how much stuff does the author post before I follow them. You can guess that by looking at the archive, but usually it requires some mental effort to estimate it. Plus, it's cool to see that somebody posts `1.33` posts per day :)
 
-Caveat: doesn't work with custom domains (i.e. when blog doesn't have `tumblr.com` in its address).
-
 
 ## How to install
 
-1. Clone the repo: `git clone https://github.com/szeryf/tumblr-powr-pak.git` (alternatively, you can click "Download ZIP" above then unzip the downloaded file wherever is convenient for you)
+1. Download the extension (click "Clone or download", then "Download ZIP") and unpack it. Alternatively, you can clone the repo if you know how to git.
 2. Open extensions tab in Chrome (Window -> Extensions)
 3. Make sure `Developer mode` is checked
 4. Click `Load unpacked extension`
-5. Navigate to the directory where you cloned (or unzipped) the extension and Select it
+5. Navigate to the directory where you unpacked (or cloned) the extension and select it
 6. That's it. Enjoy! (You might want to refresh any open Tumblr windows, though.)
+
+## How to update
+
+1. Download the extension (click "Clone or download", then "Download ZIP") and unpack it, replacing the previous version on your disk. Alternatively, you can update the repo if you know how to git.
+2. Open extensions tab in Chrome (Window -> Extensions)
+3. Locate the `tumblr-powr-pak` on the list and click Reload next to it.
+4. That's it. Enjoy! (You might want to refresh any open Tumblr windows, though.)
+
+If anything goes wrong with updating, you can always remove the extension from Chrome and add it again.
 
 ### What? Y U NO publish to Chrome store?
 
@@ -61,4 +76,4 @@ Feel free to tweak the code, send pull request or raise issues. If you would lik
 
 ### What if I want to use the extension, but not one of the functions?
 
-Locate the functionality in the code (I added some helpful comments to mark these places, but you should be familiar with the JS syntax at least) and comment it out, then reload extension in Chrome.
+Locate the functionality in the code (I added some helpful comments to mark these places, but you need to be familiar with the JS syntax at least) and comment it out (or remove), then reload extension in Chrome.
