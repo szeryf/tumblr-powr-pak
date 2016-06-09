@@ -23,6 +23,12 @@
     {
       "matches": ["https://www.tumblr.com/dashboard*"],
       "js": ["peepr-removr.js"]
+    },
+    // Allow ctrl/cmd-clicking on images in dashboard to open them in new tab:
+    // comment out or remove the following block to disable (lines 29-32 plus the comma above)
+    {
+      "matches": ["https://www.tumblr.com/dashboard*"],
+      "js": ["no-indash-blogs.js"]
     }
   ]
 }
