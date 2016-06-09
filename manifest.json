@@ -10,7 +10,7 @@
   "content_scripts": [
     // Archive stats: comment out or remove the following block to disable (lines 12-15)
     {
-      "matches": ["http://*.tumblr.com/archive*"],
+      "matches": ["*://*/archive*"],
       "js": ["archive.js"]
     },
     // Replace image page with the image itself: comment out or remove the following block to disable (lines 17-20 plus the comma above)
