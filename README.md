@@ -57,7 +57,7 @@ As mentioned above, I like to see how much stuff does the author post before I f
 
 1. Download the extension (click "Clone or download", then "Download ZIP") and unpack it, replacing the previous version on your disk. Alternatively, you can update the repo if you know how to git.
 2. Open extensions tab in Chrome (Window -> Extensions)
-3. Locate the `tumblr-powr-pak` on the list and click Reload next to it.
+3. Locate the `tumblr-powr-pak` on the list and click Reload next to it. The version number next to extension name should change to `1.1.0`.
 4. That's it. Enjoy! (You might want to refresh any open Tumblr windows, though.)
 
 If anything goes wrong with updating, you can always remove the extension from Chrome and add it again.
