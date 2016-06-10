@@ -1,6 +1,6 @@
 {
   "name": "tumblr-power-pak",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Fix some of the most annoying Tumblr quirks.",
   "background": {
     "page":"bg.html"
@@ -21,13 +21,13 @@
     // Allow the links to tumblrs to be opened in new window/tab instead of the side-thingy:
     // comment out or remove the following block to disable (lines 23-26 plus the comma above)
     {
-      "matches": ["https://www.tumblr.com/dashboard*"],
+      "matches": ["https://www.tumblr.com/*"],
       "js": ["peepr-removr.js"]
     },
     // Allow ctrl/cmd-clicking on images in dashboard to open them in new tab:
     // comment out or remove the following block to disable (lines 29-32 plus the comma above)
     {
-      "matches": ["https://www.tumblr.com/dashboard*"],
+      "matches": ["https://www.tumblr.com/*"],
       "js": ["no-indash-blogs.js"]
     }
   ]
