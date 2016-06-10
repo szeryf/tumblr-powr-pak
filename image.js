@@ -1,3 +1,2 @@
-img = document.getElementById('content-image');
-console.log('img', img);
+var img = document.getElementById('content-image');
 top.location = img.src;
