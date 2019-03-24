@@ -1,0 +1,75 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    "no-else-return": "off",
+    "no-alert": "off",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "react/prefer-stateless-function": 2,
+    "quotes": "off",
+    "prefer-template": "off",
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "import/extensions": "off",
+    "import/no-webpack-loader-syntax": "off",
+    "import/first": [
+      "error",
+      {
+        "absolute-first": false
+      }
+    ],
+    "import/no-named-as-default": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-wrap-multilines": 0,
+    "react/no-danger": 0,
+    "react/require-default-props": "off",
+    "react/forbid-prop-types": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/no-find-dom-node": "off",
+    "prefer-destructuring": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack/base.config.js"
+      }
+    }
+  },
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": true,
+    "assert": true,
+    "sinon": true,
+    "jest": true
+  }
+}

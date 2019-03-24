@@ -10,14 +10,19 @@ for (var i = 0; i < sizes.length; i++) {
     }
   }
 }
-const sources = document.querySelectorAll('figure>img[srcset]')
-for (var i = 0; i < sources.length; i++) {
-  const source = sources[i]
-  console.log('source', source, source.srcset)
-  const { srcset } = sources[i]
-  const urls = srcset.match(/http\S+1280.(png|jpg)/)
-  if (urls) {
-    console.log('rediect', urls[0])
-    top.location = urls[0]
+
+const parseSources = (sources) => {
+  for (var i = 0; i < sources.length; i++) {
+    const source = sources[i]
+    console.log('source', source, source.srcset)
+    const { srcset } = sources[i]
+    const urls = srcset.match(/http\S+1280.(png|jpg)/)
+    if (urls) {
+      console.log('rediect', urls[0])
+      top.location = urls[0]
+    }
   }
 }
+
+parseSources(document.querySelectorAll('figure img[srcset]'))
+parseSources(document.querySelectorAll('picture source[srcset]'))
