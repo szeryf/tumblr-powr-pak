@@ -1,18 +1,19 @@
 function postDate(post) {
     "use strict";
-    return new Date(post.querySelector('.post_date').innerText);
+    return new Date(post.innerText);
 }
 
 var allPosts = {};
 
 function countStats() {
     "use strict";
-    var posts = document.querySelectorAll(".post");
+    var posts = document.querySelectorAll("a h1");
+    if (!posts.length) return;
     var i, post, pDate, pId;
     for (i = posts.length - 1; i >= 0; i -= 1) {
         post = posts[i];
         pDate = postDate(post);
-        pId = posts[i].id;
+        pId = posts[i].parentElement.parentElement.href;
         allPosts[pId] = pDate;
     }
     var maxDate = postDate(posts[0]), minDate = maxDate;
@@ -34,19 +35,19 @@ function countStats() {
 
     var prev = document.querySelector('#przemek-post-stats');
     if (prev) {
-        document.querySelector("#nav_archive").removeChild(prev);
+        document.querySelector("header > div:first-child").removeChild(prev);
     }
 
-    var items = document.createElement('span');
+    var items = document.createElement('div');
     items.id = 'przemek-post-stats';
-    items.className = 'search_control_items archive-controls';
-    var info = document.createElement('span');
+    items.style = 'color:#fff;margin-left:10px;font-size:14px';
+    var info = document.createElement('div');
     info.className = 'control_text';
     info.innerText = "" + postNum + " posts in " + days + " days. AVG: " + (postNum / days).toPrecision(3);
     items.appendChild(info);
-    document.querySelector("#nav_archive").insertBefore(items, document.querySelector("#register"));
+    document.querySelector("header > div:first-child").insertBefore(items, document.querySelector("#register"));
 }
 
-// countStats();
+// setTimeout(countStats, 1000);
 
 setInterval(countStats, 100);
