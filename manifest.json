@@ -1,6 +1,6 @@
 {
   "name": "tumblr-power-pak",
-  "version": "1.3.1",
+  "version": "1.4",
   "description": "Fix some of the most annoying Tumblr quirks.",
   "background": {
     "page": "bg.html"
